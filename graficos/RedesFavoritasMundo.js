@@ -37,16 +37,16 @@ async function redesFavoritasMundo() {
         }
     }
 
+    // Criar gráfico primeiro
     criarGrafico(data, layout)
 
-    // Verifique se o container está correto e o texto é inserido
+    // Em seguida, adicionar o texto
     incluirTexto(`
         Embora o <span>Instagram</span> ocupe a quarta posição em termos de número total de usuários entre as redes sociais, 
         destaca-se como a <span>preferida pelos usuários</span>. Supera até mesmo o <span>Facebook</span>, a plataforma com mais 
         usuários, sendo a terceira opção mais apreciada pelos usuários. <br>Essa preferência evidencia a forte conexão e apreço 
         que as pessoas têm pelo Instagram em comparação com outras redes sociais.
-    `)
+    `);
 }
 
 redesFavoritasMundo()
-
