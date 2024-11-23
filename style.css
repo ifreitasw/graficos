@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg-color: #2E7D32; /* Verde escuro para fundo */
+    --primary-color: #FFFFFF; /* Branco para o texto */
+    --secondary-color: #8B8B8B; /* Cinza para elementos secundários */
+    --highlight-color: #4CAF50; /* Verde claro para detalhes e destaques */
+    --font: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color); /* Cor de fundo verde */
+    color: var(--primary-color); /* Texto branco */
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color); /* Cabeçalho branco */
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--highlight-color); /* Título em verde claro */
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--highlight-color); /* Links em verde claro */
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+.grafico {
+    margin-top: 3rem;
+}
+
+.graficos-container {
+    margin: 5rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid var(--secondary-color); /* Borda cinza */
+}
+
+span {
+    font-weight: bold;
+    color: var(--highlight-color); /* Texto em verde claro para destaque */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color); /* Rodapé branco */
+    color: var(--bg-color); /* Texto no rodapé verde */
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+}
