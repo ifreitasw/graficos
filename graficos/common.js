@@ -20,11 +20,27 @@ function criarGrafico(data, layout) {
 }
 
 function incluirTexto(texto) {
-    const container = document.getElementById('graficos-container')
-    const paragrafo = document.createElement('p')
-    paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = texto
-    container.appendChild(paragrafo)
+    const container = document.getElementById('graficos-container');
+    
+    // Verificando se o container foi encontrado
+    if (!container) {
+        console.error('Não foi possível encontrar o container "graficos-container".');
+        return;
+    }
+
+    const paragrafo = document.createElement('p');
+    paragrafo.classList.add('graficos-container__texto');
+    
+    // Verificando se o texto não está vazio
+    if (texto.trim() === '') {
+        console.error('Texto vazio detectado!');
+        return;
+    }
+
+    paragrafo.innerHTML = texto;
+    container.appendChild(paragrafo);
+    console.log('Texto inserido com sucesso!');
 }
 
 export { getCSS, tickConfig, criarGrafico, incluirTexto }
+
